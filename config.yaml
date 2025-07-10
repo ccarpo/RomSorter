@@ -1,0 +1,55 @@
+# RomSorter Configuration
+
+# The root folder where your ROMs are currently stored, potentially in subfolders.
+rom_source_dir: 'D:\megadrive'
+
+# The folder where the 'best' version of each ROM will be moved.
+rom_destination_dir: 'D:\megadrive'
+
+# The folder where non-preferred versions of ROMs will be archived.
+archive_dir: 'C:\Temp\roms\megadrive'
+
+# Logging configuration
+log_file: 'rom_sorter.log'
+log_level: 'INFO' # Can be DEBUG, INFO, WARNING, ERROR
+
+# Ranking criteria for ROMs. List tags in order of preference (most desired first).
+# The program will look for these substrings in the filename.
+# You can find a comprehensive list here: https://gist.github.com/ramiabraham/ff41ba74f2b7104ecece
+
+# --- Exclusions ---
+# A list of directory names to completely ignore during the scan.
+excluded_dirs:
+  - 'images'
+  - 'manuals'
+  - 'boxart'
+
+# A list of file extensions to ignore (case-insensitive).
+excluded_extensions:
+  - '.png'
+  - '.jpg'
+  - '.jpeg'
+  - '.gif'
+  - '.txt'
+  - '.pdf'
+  - '.nfo'
+ranking_criteria:
+  - '(Germany)'
+  - '(German)'
+  - '(DE)'
+  - '(Europe)'
+  - '(USA, Europe)'
+  - '(Europe, USA)'
+  - '(UE)'
+  - '(EU)'
+  - '(En)'
+  - '(USA)'
+  - '(U)'
+  - '[!]'
+  - '(Unl)'
+  - '(World)'
+  - '(Rev B)'
+  - '(Rev A)'
+  - '(V1.1)'
+  - '(V1.2)'
+  - '(Japan)'
